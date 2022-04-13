@@ -15,7 +15,7 @@ fabyn = None
 fetardes = None
 
 FABYN_ID = 334766583790567425
-FETARDES_ID = 334766583790567425
+FETARDES_ID = 315048337612996608
 
 @client.event
 async def on_ready():
@@ -34,9 +34,7 @@ async def on_ready():
   while True:
     now = datetime.now() + timedelta(hours = 2)
     
-    await fabyn.send(f"{now.day}d {now.hour}h {now.minute}m {now.second}s")
-
-    if now.day == 14 or now.minute == 21:
+    if now.day == 14:
       await fetardes.send("https://youtu.be/t0k9SgCSWzQ")
       await fetardes.send("**TO TWOJE URODZINY DZIIIIŚ**")
       await fetardes.send("**ADAM**")
@@ -44,6 +42,8 @@ async def on_ready():
       await fetardes.send("**JA PRAWDOPODOBNIE TERA ŚPIE**")
       await fetardes.send("**...**")
       await fetardes.send("**ADAM**")
+      
+      await fabyn.send("**MISZYN AKOMPLISZT** bleee")
       break
     
 
