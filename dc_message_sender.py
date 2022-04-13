@@ -49,7 +49,7 @@ async def on_ready():
 
 @client.event
 async def on_message(ctx):
-  if ctx.author.bot:
+  if ctx.author.bot or not isinstance(ctx.channel, discord.channel.DMChannel):
     return
 
   global fabyn
