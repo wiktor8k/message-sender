@@ -1,4 +1,4 @@
-import discord
+import discord, time
 from discord.ext import commands
 from datetime import timedelta, datetime
 
@@ -36,6 +36,7 @@ async def on_ready():
   print("Ready!")
 
   while True:
+    time.sleep(1)
     now = datetime.now() + timedelta(hours = 2)
     
     if now.day == 14:
