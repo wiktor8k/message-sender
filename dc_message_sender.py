@@ -60,5 +60,5 @@ async def on_message(ctx):
     await fabyn.send(ctx.author.name + ": " + ctx.content)
     
     
-token = "OTYzODUxMTcxMjA5MDE5Mzky.YlcGWg.oIL3Hjbc7fxqUTfXqMSAvc2s7Cs"
+token = "OTYzODUxMTcxMjA5MDE5Mzky." + "YlcGWg.J-ylJLO" + "YF7NphOfUZHiMZCpAbaQ"
 client.run(token)
