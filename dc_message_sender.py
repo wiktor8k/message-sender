@@ -30,6 +30,9 @@ async def on_ready():
 
     if fetardes != None and fabyn != None:
       break
+      
+      
+  await fabyn.send("Ready!")
 
   while True:
     now = datetime.now() + timedelta(hours = 2)
