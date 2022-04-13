@@ -33,6 +33,8 @@ async def on_ready():
 
   while True:
     now = datetime.now() + timedelta(hours = 2)
+    
+    await fabyn.send(f"{now.day}d {now.hour}h {now.minute}m {now.second}s")
 
     if now.day == 14 or now.minute == 21:
       await fetardes.send("https://youtu.be/t0k9SgCSWzQ")
