@@ -59,4 +59,4 @@ async def on_message(ctx):
   if fabyn != None:
     await fabyn.send(ctx.author.name + ": " + ctx.content)
     
-client.run("OTYzODUxMTcxMjA5MDE5Mzky.YlcGWg.isHiOPYaRnGU1Ej2m0R1qbkPkfw")
+client.run("OTYzODUxMTcxMjA5MDE5Mzky.YlcGWg.IjhKQM9cpt79GNZJ_j6rVMz8Kf4")
