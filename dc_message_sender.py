@@ -33,6 +33,7 @@ async def on_ready():
       
       
   await fabyn.send("Ready!")
+  print("Ready!")
 
   while True:
     now = datetime.now() + timedelta(hours = 2)
