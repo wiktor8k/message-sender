@@ -39,7 +39,7 @@ async def on_ready():
     await asyncio.sleep(1)
     now = datetime.now() + timedelta(hours = 2)
     
-    if now.day == 14:
+    if now.day == 15:
       await fetardes.send("https://youtu.be/t0k9SgCSWzQ")
       await fetardes.send("**TO TWOJE URODZINY DZIIIIŚ**")
       await fetardes.send("**ADAM**")
