@@ -54,6 +54,12 @@ async def on_ready():
 
 @client.event
 async def on_message(ctx):
+  if "avatar" in ctx.content and client.id in [member.id for member in ctx.mentions]:
+    for member in ctx.mentions:
+      if member.id != client.id:
+        await ctx.channel.send(member.avatar_url)
+        
+  
   if ctx.author.bot or not isinstance(ctx.channel, discord.channel.DMChannel):
     return
 
