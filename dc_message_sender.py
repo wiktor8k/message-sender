@@ -34,8 +34,8 @@ async def on_ready():
       break
       
       
-  await fabyn.send("Ready!")
-  print("Ready!")
+  await fabyn.send("Ready! Steady!")
+  print("Ready! Steady!")
 
   while True:
     await asyncio.sleep(1)
