@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=hY0EBSpBK-s&ab_channel=BritishAgent
+
 import discord, asyncio
 from discord.ext import commands
 from datetime import timedelta, datetime
@@ -39,16 +41,8 @@ async def on_ready():
     await asyncio.sleep(1)
     now = datetime.now() + timedelta(hours = 2)
     
-    if now.day == 15:
-      await fetardes.send("https://youtu.be/t0k9SgCSWzQ")
-      await fetardes.send("**TO TWOJE URODZINY DZIIIIŚ**")
-      await fetardes.send("**ADAM**")
-      await fetardes.send("**...**")
-      await fetardes.send("**JA PRAWDOPODOBNIE TERA ŚPIE**")
-      await fetardes.send("**...**")
-      await fetardes.send("**ADAM**")
-      
-      await fabyn.send("**MISZYN AKOMPLISZT** bleee")
+    if now.day == 4:
+      await fabyn.send("https://youtu.be/t0k9SgCSWzQ", reference = 966293238388490270)
       break
     
 
