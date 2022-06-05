@@ -43,7 +43,7 @@ async def on_message(ctx):
         
 # other utilities
   if ctx.channel.id == 983107236693954561:
-    if "gif" in ctx.content:
+    if "gif" in ctx.content or "png" in ctx.content or "jpg" in ctx.content or "mov" in ctx.content or "avi" in ctx.content or "jpeg" in ctx.content:
       await ctx.delete()
       
     else:
