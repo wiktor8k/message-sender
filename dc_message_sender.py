@@ -21,9 +21,10 @@ async def on_ready():
   for member in guild.members:
    if member.id == FABYN_ID:
      fabyn = member
-
-  await fabyn.send("Ready! Steady!")
-  print("Ready! Steady!")
+ 
+  version = "v2.0"
+  await fabyn.send("Ready! Steady! " + version)
+  print("Ready! Steady! " + version)
 
   while True:
     await asyncio.sleep(1)
